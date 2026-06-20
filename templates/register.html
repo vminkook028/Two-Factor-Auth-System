@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<h1>Register</h1>
+<p class="subtitle">Create an account and set up your authenticator app</p>
+<form method="POST">
+    <input type="text" name="username" placeholder="Enter username" required>
+    <button type="submit">Register</button>
+</form>
+<div class="nav"><a href="{{ url_for('home') }}">← Back to Home</a></div>
+{% endblock %}

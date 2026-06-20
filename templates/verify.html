@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Verify OTP{% endblock %}
+{% block content %}
+<h1>Verify OTP</h1>
+<p class="subtitle">Enter the 6-digit code from your authenticator app</p>
+
+{% if result %}
+    {% if result.valid %}
+        <div class="success-box">✅ {{ result.message }}</div>
+    {% else %}
+        <div class="fail-box">❌ {{ result.message }}</div>
+    {% endif %}
+{% endif %}
+
+<form method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="text" name="otp" placeholder="6-digit OTP" maxlength="6" required>
+    <button type="submit">Verify</button>
+</form>
+<div class="nav"><a href="{{ url_for('home') }}">← Back to Home</a></div>
+{% endblock %}

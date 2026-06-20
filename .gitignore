@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+qrcodes/
+users_db.json
+.env
+venv/
