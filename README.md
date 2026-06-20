@@ -131,5 +131,5 @@ This project is open-source and available under the MIT License.
 ---
 
 ## 👤 Author
-
-Built as part of a personal cybersecurity portfolio project.
+  Prajapati Amisha a.
+  Built as part of a personal cybersecurity portfolio project.
